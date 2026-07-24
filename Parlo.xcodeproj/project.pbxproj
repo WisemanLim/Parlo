@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005B304DE6152147362B28AD /* Env.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE46E19B34843EC490D54A88 /* Env.swift */; };
+		13C1B9C0E2561A5A1DF14200 /* Language.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69962A4A1012176EDCC2D8B0 /* Language.swift */; };
+		161147AA23E84C59F8745023 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4793159986804466CDBD5E33 /* App.swift */; };
+		2351EF5A7AA57E307C92A3A4 /* Engines.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD66D3E28C1399D9285D0D0 /* Engines.swift */; };
+		3F53A436305666F59A1D6D6C /* WhisperKitSTTEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0CA6A9084250093499A0961 /* WhisperKitSTTEngine.swift */; };
+		4EA81D13D3A9E6C2116E529C /* SystemSpeechSTTEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9A15092CF3F6A44AD924A1D /* SystemSpeechSTTEngine.swift */; };
+		79332FE7BEFA9ED7E5D7B5B2 /* ParloTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1FE58C3F515E42B56BB549 /* ParloTests.swift */; };
+		B2C913239161AD3153531E87 /* Utterance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713CCBFD12236BEC4BAF1541 /* Utterance.swift */; };
+		BA00F2192BC470F3F90A1A19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F91FDD5767249661B32E02FA /* Assets.xcassets */; };
+		C1DE3614E26DCF1C01F704F4 /* AppleTranslationEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218E68C3D031DBA93CC7F5FE /* AppleTranslationEngine.swift */; };
+		C3E2AA434C0D947E78CCE06B /* TranslationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28863A577F09A9FCB21BF5A5 /* TranslationViewModel.swift */; };
+		CB8E0EDA2F9E0AA26789008F /* SystemTTSEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D577968D9F34515ACA8614F0 /* SystemTTSEngine.swift */; };
+		E6F9A3B222B52BBFA0DA6FAC /* EngineFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60F1BC3A76C9C7DD9936EC7 /* EngineFactory.swift */; };
+		E948D8DE1AC0F14FD6F286E4 /* TranslationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EB8E4AD28DE3198D7378AD /* TranslationScreen.swift */; };
+		EC3676C17639F1D695CDEF03 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BD6EF9399A3ADCAA680FD /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CDF84FA4136A38D8AF23BA88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF310AE53D12E5BC51267996 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEDE186C01B40D747F6DBB21;
+			remoteInfo = Parlo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		213BD6EF9399A3ADCAA680FD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		218E68C3D031DBA93CC7F5FE /* AppleTranslationEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleTranslationEngine.swift; sourceTree = "<group>"; };
+		28863A577F09A9FCB21BF5A5 /* TranslationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewModel.swift; sourceTree = "<group>"; };
+		4793159986804466CDBD5E33 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		6521316A1600CB572391855D /* Parlo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Parlo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69962A4A1012176EDCC2D8B0 /* Language.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Language.swift; sourceTree = "<group>"; };
+		713CCBFD12236BEC4BAF1541 /* Utterance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utterance.swift; sourceTree = "<group>"; };
+		8C5E6F197F3BC8B726695D3E /* ParloTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = ParloTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91EB8E4AD28DE3198D7378AD /* TranslationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationScreen.swift; sourceTree = "<group>"; };
+		C0CA6A9084250093499A0961 /* WhisperKitSTTEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhisperKitSTTEngine.swift; sourceTree = "<group>"; };
+		C60F1BC3A76C9C7DD9936EC7 /* EngineFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EngineFactory.swift; sourceTree = "<group>"; };
+		CA1FE58C3F515E42B56BB549 /* ParloTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParloTests.swift; sourceTree = "<group>"; };
+		D577968D9F34515ACA8614F0 /* SystemTTSEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemTTSEngine.swift; sourceTree = "<group>"; };
+		EAD66D3E28C1399D9285D0D0 /* Engines.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Engines.swift; sourceTree = "<group>"; };
+		EE46E19B34843EC490D54A88 /* Env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Env.swift; sourceTree = "<group>"; };
+		F91FDD5767249661B32E02FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9A15092CF3F6A44AD924A1D /* SystemSpeechSTTEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemSpeechSTTEngine.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		1858B789D07A11FD177B56DA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				812546BE82FCFE9284FE1913 /* Resources */,
+				84590E468CEE4A9729CF402A /* Sources */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		812546BE82FCFE9284FE1913 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F91FDD5767249661B32E02FA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		84590E468CEE4A9729CF402A /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				4793159986804466CDBD5E33 /* App.swift */,
+				213BD6EF9399A3ADCAA680FD /* ContentView.swift */,
+				B7089C140FAB05B492C43C76 /* Core */,
+				CDA13066499A27AD0361DBF2 /* Features */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8942A7BF79ACF26DF7075E5F /* AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA1FE58C3F515E42B56BB549 /* ParloTests.swift */,
+			);
+			path = AppTests;
+			sourceTree = "<group>";
+		};
+		B28A9102617CD223EAD1D829 = {
+			isa = PBXGroup;
+			children = (
+				1858B789D07A11FD177B56DA /* App */,
+				8942A7BF79ACF26DF7075E5F /* AppTests */,
+				F078B0EE0A28B2ECE7FAC16F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7089C140FAB05B492C43C76 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				EE46E19B34843EC490D54A88 /* Env.swift */,
+				B80560962E9F87DE011285E3 /* Engines */,
+				E15F8B7F07B606D0557D8FDA /* Models */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		B80560962E9F87DE011285E3 /* Engines */ = {
+			isa = PBXGroup;
+			children = (
+				218E68C3D031DBA93CC7F5FE /* AppleTranslationEngine.swift */,
+				C60F1BC3A76C9C7DD9936EC7 /* EngineFactory.swift */,
+				EAD66D3E28C1399D9285D0D0 /* Engines.swift */,
+				F9A15092CF3F6A44AD924A1D /* SystemSpeechSTTEngine.swift */,
+				D577968D9F34515ACA8614F0 /* SystemTTSEngine.swift */,
+				C0CA6A9084250093499A0961 /* WhisperKitSTTEngine.swift */,
+			);
+			path = Engines;
+			sourceTree = "<group>";
+		};
+		CDA13066499A27AD0361DBF2 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				EC3F642261C54DFBA97B182A /* Translation */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		E15F8B7F07B606D0557D8FDA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				69962A4A1012176EDCC2D8B0 /* Language.swift */,
+				713CCBFD12236BEC4BAF1541 /* Utterance.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EC3F642261C54DFBA97B182A /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				91EB8E4AD28DE3198D7378AD /* TranslationScreen.swift */,
+				28863A577F09A9FCB21BF5A5 /* TranslationViewModel.swift */,
+			);
+			path = Translation;
+			sourceTree = "<group>";
+		};
+		F078B0EE0A28B2ECE7FAC16F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6521316A1600CB572391855D /* Parlo.app */,
+				8C5E6F197F3BC8B726695D3E /* ParloTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3AB60A2A269F2A169EBBF70F /* ParloTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B83788364D47F58096C1812B /* Build configuration list for PBXNativeTarget "ParloTests" */;
+			buildPhases = (
+				D60F4AB8C69176E7DA576B94 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0754F6D7895298A8598330DA /* PBXTargetDependency */,
+			);
+			name = ParloTests;
+			packageProductDependencies = (
+			);
+			productName = ParloTests;
+			productReference = 8C5E6F197F3BC8B726695D3E /* ParloTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AEDE186C01B40D747F6DBB21 /* Parlo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1927106DC311D603BF755C3 /* Build configuration list for PBXNativeTarget "Parlo" */;
+			buildPhases = (
+				AED38CAE4B4C9F1599CBC2BB /* Sources */,
+				D74A5F3FEEF14F50440D1EDB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Parlo;
+			packageProductDependencies = (
+			);
+			productName = Parlo;
+			productReference = 6521316A1600CB572391855D /* Parlo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF310AE53D12E5BC51267996 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					AEDE186C01B40D747F6DBB21 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = BCE6AD4B84C02A5AFA74CF31 /* Build configuration list for PBXProject "Parlo" */;
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ko,
+			);
+			mainGroup = B28A9102617CD223EAD1D829;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F078B0EE0A28B2ECE7FAC16F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEDE186C01B40D747F6DBB21 /* Parlo */,
+				3AB60A2A269F2A169EBBF70F /* ParloTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D74A5F3FEEF14F50440D1EDB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA00F2192BC470F3F90A1A19 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AED38CAE4B4C9F1599CBC2BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				161147AA23E84C59F8745023 /* App.swift in Sources */,
+				C1DE3614E26DCF1C01F704F4 /* AppleTranslationEngine.swift in Sources */,
+				EC3676C17639F1D695CDEF03 /* ContentView.swift in Sources */,
+				E6F9A3B222B52BBFA0DA6FAC /* EngineFactory.swift in Sources */,
+				2351EF5A7AA57E307C92A3A4 /* Engines.swift in Sources */,
+				005B304DE6152147362B28AD /* Env.swift in Sources */,
+				13C1B9C0E2561A5A1DF14200 /* Language.swift in Sources */,
+				4EA81D13D3A9E6C2116E529C /* SystemSpeechSTTEngine.swift in Sources */,
+				CB8E0EDA2F9E0AA26789008F /* SystemTTSEngine.swift in Sources */,
+				E948D8DE1AC0F14FD6F286E4 /* TranslationScreen.swift in Sources */,
+				C3E2AA434C0D947E78CCE06B /* TranslationViewModel.swift in Sources */,
+				B2C913239161AD3153531E87 /* Utterance.swift in Sources */,
+				3F53A436305666F59A1D6D6C /* WhisperKitSTTEngine.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D60F4AB8C69176E7DA576B94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79332FE7BEFA9ED7E5D7B5B2 /* ParloTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0754F6D7895298A8598330DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEDE186C01B40D747F6DBB21 /* Parlo */;
+			targetProxy = CDF84FA4136A38D8AF23BA88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1F1DB37E16A7EF3D9AC43B58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		2337EF43969DA9DA2570F9FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wise.parlo.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parlo.app/Parlo";
+			};
+			name = Debug;
+		};
+		34D5BBA7E2A0BB6D1869F989 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ALQEFZ23LN;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wise.parlo;
+				PRODUCT_NAME = Parlo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		52179EEC6EC1CB154154CC5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		68587A62974324B4E3677EC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ALQEFZ23LN;
+				INFOPLIST_FILE = App/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.wise.parlo;
+				PRODUCT_NAME = Parlo;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8E75CB21985F432C19EF6A9F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.wise.parlo.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Parlo.app/Parlo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A1927106DC311D603BF755C3 /* Build configuration list for PBXNativeTarget "Parlo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				68587A62974324B4E3677EC1 /* Debug */,
+				34D5BBA7E2A0BB6D1869F989 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B83788364D47F58096C1812B /* Build configuration list for PBXNativeTarget "ParloTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2337EF43969DA9DA2570F9FA /* Debug */,
+				8E75CB21985F432C19EF6A9F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BCE6AD4B84C02A5AFA74CF31 /* Build configuration list for PBXProject "Parlo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52179EEC6EC1CB154154CC5A /* Debug */,
+				1F1DB37E16A7EF3D9AC43B58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF310AE53D12E5BC51267996 /* Project object */;
+}

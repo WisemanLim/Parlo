@@ -1,0 +1,70 @@
+# Parlo — XcodeGen 프로젝트 정의. 생성: `xcodegen generate` → Parlo.xcodeproj
+# Info.plist 는 GENERATE_INFOPLIST_FILE=YES + INFOPLIST_KEY_* 로 생성(물리 파일 불필요).
+name: Parlo
+options:
+  bundleIdPrefix: com.wise
+  deploymentTarget:
+    iOS: "18.0"
+  developmentLanguage: ko
+  createIntermediateGroups: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+configs:
+  Debug: debug
+  Release: release
+
+targets:
+  Parlo:
+    type: application
+    platform: iOS
+    sources:
+      - path: App/Sources
+      - path: App/Resources
+    # 명시적 Info.plist 생성(App/Info.plist). CFBundleIconName 포함 → App Store 업로드 요건 충족.
+    info:
+      path: App/Info.plist
+      properties:
+        CFBundleIconName: AppIcon
+        UILaunchScreen: {}
+        UIApplicationSupportsIndirectInputEvents: true
+        UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait]
+        # 권한 문자열 (PRD/COMPLIANCE: 마이크·음성인식 목적 고지 필수)
+        NSMicrophoneUsageDescription: "실시간 통역을 위해 음성을 듣습니다. 음성은 기기에서만 처리되며 외부로 전송되지 않습니다."
+        NSSpeechRecognitionUsageDescription: "말한 내용을 텍스트로 변환하기 위해 온디바이스 음성 인식을 사용합니다."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.wise.parlo
+        PRODUCT_NAME: Parlo
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CURRENT_PROJECT_VERSION: "1"
+        MARKETING_VERSION: "0.1.0"
+        TARGETED_DEVICE_FAMILY: "1"          # iPhone 전용 (min iPhone 12 mini)
+        # 서명: 시뮬레이터는 불필요. 실기기/배포 시 DEVELOPMENT_TEAM 주입(커밋 금지).
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
+
+  ParloTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: AppTests
+    dependencies:
+      - target: Parlo
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.wise.parlo.tests
+
+schemes:
+  Parlo:
+    build:
+      targets:
+        Parlo: all
+    test:
+      targets:
+        - ParloTests
